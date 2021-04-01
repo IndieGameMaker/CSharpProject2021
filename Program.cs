@@ -70,9 +70,10 @@ namespace CSharpProject
             double result = Cal01(2.0f);
             Console.WriteLine(result);
 
-            Cal02();
-            Cal03();
-            Cal05();
+            // Cal02();
+            // Cal03();
+            // Cal05();
+            Cal06();
         }
 
         //함수(Funcition), 메서드(Method)
@@ -174,7 +175,7 @@ namespace CSharpProject
 
         static void Cal05()
         {
-            STATE monsterState = STATE.IDLE;
+            STATE monsterState = STATE.TRACE;
 
             switch(monsterState)
             {
@@ -188,10 +189,23 @@ namespace CSharpProject
 
                 default :
                     Console.WriteLine("나머지");
+                    break;
             }
         }
-
-
-
+    
+        static void Cal06()
+        {
+            // for (초깃값; 조건; 증가값)
+            // {
+            // }
+            for (int i=2; i<10; i++)
+            {
+                for (int j=1; j<10; j++)
+                {
+                    Console.WriteLine($"{i} X {j} = {i*j}");
+                }
+                Console.WriteLine("");
+            }
+        }
     }
 }

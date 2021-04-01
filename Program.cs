@@ -71,6 +71,7 @@ namespace CSharpProject
             Console.WriteLine(result);
 
             Cal02();
+            Cal03();
         }
 
         //함수(Funcition), 메서드(Method)
@@ -124,7 +125,7 @@ namespace CSharpProject
         static void Cal02()
         {
             int maxPlayers = 10;
-            
+            Console.Write("입장객수를 입력하세요. ");
             string strNum = Console.ReadLine();
             //문자열을 정수로 형변환
             int players = int.Parse(strNum);
@@ -137,8 +138,59 @@ namespace CSharpProject
             {
                 Console.WriteLine("입장가능");
             }            
-
         }
+
+        //3항 연산자
+        /*
+            (조건식) ? 값1 : 값2;
+        */
+        static void Cal03()
+        {
+            int a = 3;
+            string str = (a % 2 == 0) ? "짝수" : "홀수";
+            Console.WriteLine($"a={a}, a%2={a%2}, {str}");
+        }
+
+        /*
+            switch(값)
+            {
+                case 비교값1:
+                    로직1;
+                    break;
+                case 비교값2:
+                    로직2;
+                    break;
+                case 비교값3:
+                    로직3;
+                    break;    
+                default:
+                    나머지로직;                                    
+            }
+        */
+
+        //열거형 데이터 구조
+        enum STATE {IDLE, TRACE, ATTACK, DIE};
+
+        static void Cal05()
+        {
+            STATE monsterState = STATE.IDLE;
+
+            switch(monsterState)
+            {
+                case STATE.IDLE:
+                    Console.WriteLine("정지 상태");
+                    break;
+
+                case STATE.TRACE:
+                    Console.WriteLine("추적 상태");
+                    break;
+
+                default :
+                    Console.WriteLine("나머지");
+            }
+        }
+
+
 
     }
 }

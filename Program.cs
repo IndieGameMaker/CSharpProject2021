@@ -198,13 +198,30 @@ namespace CSharpProject
             // for (초깃값; 조건; 증가값)
             // {
             // }
-            for (int i=2; i<10; i++)
+            // for (int i=2; i<10; i++)
+            // {
+            //     for (int j=1; j<10; j++)
+            //     {
+            //         Console.WriteLine($"{i} X {j} = {i*j}");
+            //     }
+            //     Console.WriteLine("");
+            // }
+
+            string [] items = new string[3] {"HP", "SPEED", "POWER"};
+            /*
+                items[0] = "HP"
+                items[1] = "SPEED"
+                items[2] = "POWER"
+            */ 
+
+            foreach (string item in items)
             {
-                for (int j=1; j<10; j++)
-                {
-                    Console.WriteLine($"{i} X {j} = {i*j}");
-                }
-                Console.WriteLine("");
+                Console.WriteLine(item);
+            }
+
+            for (int i=0; i<items.Length; i++)
+            {
+                Console.WriteLine(items[i]);
             }
         }
     }

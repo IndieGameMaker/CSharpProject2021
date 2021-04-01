@@ -67,7 +67,8 @@ namespace CSharpProject
             // decimal d1 = 3.0m;
 
             // Console.WriteLine(c1/d1);
-            Cal01(2.0f);
+            double result = Cal01(2.0f);
+            Console.WriteLine(result);
         }
 
         //함수(Funcition), 메서드(Method)
@@ -76,16 +77,38 @@ namespace CSharpProject
             반환타입 함수명(매개변수)
             {
 
+            } 
+
+            void Sum()
+            {
+
+            }
+
+            void Sum(int a, int b)
+            {
+
+            }
+
+            int Sum(int a, int b)
+            {
+                return 
+            }
+
+            string GetUserName(int userID)
+            {
+                return
             }
         */
         const float PI = 3.14f;
 
-        static void Cal01(float radius)
+        static double Cal01(float radius)
         {
             //원의 면적 계산 : PI * r ^ 2
             //float radius = 2.0f;
             double circle = PI * radius * radius; // PI * Math.Pow(radius,2);
-            Console.WriteLine ($"원의 면적={circle}");
+            return circle;   
         }
+
+        
     }
 }

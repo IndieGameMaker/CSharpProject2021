@@ -73,7 +73,8 @@ namespace CSharpProject
             // Cal02();
             // Cal03();
             // Cal05();
-            Cal06();
+            // Cal06();
+            Cal07();
         }
 
         //함수(Funcition), 메서드(Method)

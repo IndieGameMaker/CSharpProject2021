@@ -6,7 +6,7 @@ namespace CSharpProject
     {
         static void Main(string[] args)
         {
-            //
+            // 데이터타입 변수명 = 초깃값;
             // string userName = "Zack";
             // int userLevel = 20;
 

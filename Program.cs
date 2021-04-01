@@ -69,6 +69,8 @@ namespace CSharpProject
             // Console.WriteLine(c1/d1);
             double result = Cal01(2.0f);
             Console.WriteLine(result);
+
+            Cal02();
         }
 
         //함수(Funcition), 메서드(Method)
@@ -109,6 +111,34 @@ namespace CSharpProject
             return circle;   
         }
 
-        
+        /*
+            if (조건식)
+            {
+                조건식이 true이면 실행
+            }
+            else
+            {
+                조건식이 false일때 실행
+            }
+        */
+        static void Cal02()
+        {
+            int maxPlayers = 10;
+            
+            string strNum = Console.ReadLine();
+            //문자열을 정수로 형변환
+            int players = int.Parse(strNum);
+
+            if (players > maxPlayers)
+            {
+                Console.WriteLine("최대 허용수를 초과");
+            }
+            else
+            {
+                Console.WriteLine("입장가능");
+            }            
+
+        }
+
     }
 }
